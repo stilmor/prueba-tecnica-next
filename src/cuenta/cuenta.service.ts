@@ -47,7 +47,7 @@ export class CuentaService {
     await cuenta.save();
 
     return await Movimiento.create({
-      cuentaID: cuenta.id,
+      cuentaId: cuenta.id,
       tipo: 'retiro',
       monto,
       fecha: new Date(),
